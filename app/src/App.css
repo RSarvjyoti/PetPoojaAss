@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9; /* Light background color for better aesthetics */
+}
+
+.table-container {
+  margin-top: 20px;
+  width: 90%; /* Ensure the container adapts to screen width */
+  max-width: 1200px; /* Restrict the max width */
+  overflow-x: auto; /* Enable horizontal scrolling on smaller devices */
+  background: #fff;
+  border: 1px solid #ddd; /* Add a subtle border to the container */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  padding: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 16px; /* Add more padding for better readability */
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background-color: #4CAF50; /* A pleasant green background for the header */
+  color: white; /* White text for contrast */
+  text-transform: uppercase; /* Make header text uppercase for better structure */
+}
+
+thead input {
+  width: 100%;
+  padding: 6px;
+  margin-top: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row color for better readability */
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover for better interactivity */
+}
+
+@media screen and (max-width: 768px) {
+  th,
+  td {
+    padding: 10px; /* Reduce padding for smaller screens */
+    font-size: 12px; /* Adjust font size for readability */
+  }
+
+  .table-container {
+    padding: 12px;
+  }
+
+  thead input {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  th,
+  td {
+    padding: 8px;
+    font-size: 10px; /* Adjust for very small devices */
+  }
+
+  thead input {
+    padding: 4px;
+    font-size: 10px;
+  }
+}
