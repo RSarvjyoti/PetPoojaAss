@@ -1,4 +1,3 @@
-import React from "react";
 interface ColumnConfig {
   key: string;
   title: string;
@@ -23,7 +22,7 @@ const TableBody = <T,>({ data, columns, customStyles = {} }: TableBodyProps<T>) 
         <tr key={idx}>
           {columns.map((col) => (
             <td key={col.key} style={{ fontSize: customStyles.bodyFontSize }}>
-              {row[col.key as keyof T]}
+              {row[col.key as keyof T] as React.ReactNode}  {/* Typecast to ReactNode */}
             </td>
           ))}
         </tr>
