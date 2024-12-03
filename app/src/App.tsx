@@ -1,12 +1,13 @@
 import React from "react";
-import TableContainer from "./components/TableContainer";
 import './App.css'
 import CustomTablePage from "./pages/CustomTablePage";
+import CustomForm from "./pages/CustomForm";
 
 const App: React.FC = () => {
   return (
     <div>
      <CustomTablePage />
+     <CustomForm />
     </div>
   );
 };
