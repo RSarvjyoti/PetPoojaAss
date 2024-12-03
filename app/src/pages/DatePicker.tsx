@@ -7,7 +7,7 @@ const DatePicker : React.FC = () => {
     };
 
   return (
-    <div>
+    <div className='date-picker'>
         <h1>Custom Date Picker</h1>
         <DatePickerContainer onDateSelect={handleDateSelection} />
     </div>
