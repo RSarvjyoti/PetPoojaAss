@@ -10,8 +10,11 @@
 - Date Picker
 ## Folder Structure 
 src/
+
 ├── components/
-│   ├── formFields/
+
+│   |   ├── formFields/
+
 │   │   ├── CheckboxGroup.tsx       
 │   │   ├── DateInput.tsx           
 │   │   ├── RadioGroup.tsx           
